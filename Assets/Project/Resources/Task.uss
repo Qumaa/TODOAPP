@@ -37,12 +37,13 @@
     -unity-font-definition: url('project://database/Assets/Project/Fonts/IMMORTAL%20SDF.asset?fileID=11400000&guid=914a7b74825ef73489c12002a001c155&type=2#IMMORTAL SDF');
     font-size: 26px;
     color: rgb(60, 60, 60);
-    margin-right: 40px;
+    margin-right: 20px;
     border-right-width: 1px;
-    border-left-color: rgba(0, 0, 0, 255);
-    border-right-color: rgba(0, 0, 0, 255);
-    border-top-color: rgba(0, 0, 0, 255);
-    border-bottom-color: rgba(0, 0, 0, 255);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    padding-right: 20px;
 }
 
 .taskSettings {
