@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd">
+    <Style src="project://database/Assets/Project/App.uss?fileID=7433441132597879392&amp;guid=81e4d773b0f44284ca7b45145cbfb966&amp;type=3#App" />
+    <ui:VisualElement name="root" class="root">
+        <ui:VisualElement name="logo" />
+        <ui:VisualElement name="container" class="container">
+            <ui:VisualElement name="search-container" class="search-container">
+                <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" text="filler text" name="input-field" />
+                <ui:Button display-tooltip-when-elided="true" name="add-button" class="add-button" />
+            </ui:VisualElement>
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

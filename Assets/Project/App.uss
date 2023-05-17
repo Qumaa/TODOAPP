@@ -1,0 +1,40 @@
+.root {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 255);
+    color: rgba(60, 60, 60, 255);
+    -unity-font: url('project://database/Assets/Project/Fonts/IMMORTAL.ttf?fileID=12800000&guid=ebc806704cfe24843bf212501438b03f&type=3#IMMORTAL');
+    -unity-font-definition: url('project://database/Assets/Project/Fonts/IMMORTAL%20SDF.asset?fileID=11400000&guid=914a7b74825ef73489c12002a001c155&type=2#IMMORTAL SDF');
+    font-size: 16px;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.search-container {
+    height: 60px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 255);
+    width: 40px;
+    height: 40px;
+}
