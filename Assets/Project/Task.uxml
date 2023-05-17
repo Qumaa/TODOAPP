@@ -1,7 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Project/Task.uss?fileID=7433441132597879392&amp;guid=671b8a9ad4a0b074386e6af3a835343a&amp;type=3#Task" />
-    <ui:VisualElement name="task-container" style="height: 80px; flex-direction: row; justify-content: space-between; padding-left: 4px; padding-right: 4px; padding-top: 4px; padding-bottom: 4px; margin-left: 6px; margin-right: 6px; margin-top: 6px; margin-bottom: 6px; border-left-color: rgba(0, 0, 0, 255); border-right-color: rgba(0, 0, 0, 255); border-top-color: rgba(0, 0, 0, 255); border-bottom-color: rgba(0, 0, 0, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
-        <ui:Label text="Label" display-tooltip-when-elided="true" name="task-label" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="remove-button" />
+    <Style src="project://database/Assets/Project/App.uss?fileID=7433441132597879392&amp;guid=81e4d773b0f44284ca7b45145cbfb966&amp;type=3#App" />
+    <ui:VisualElement name="task-container" class="taskSettings">
+        <ui:Label text="Label" display-tooltip-when-elided="true" name="task-label" class="textSettings labelStyle" />
+        <ui:Button display-tooltip-when-elided="true" name="remove-button" text="-" class="remove-button" />
     </ui:VisualElement>
 </ui:UXML>
