@@ -6,7 +6,7 @@
     color: rgb(60, 60, 60);
     -unity-font: url('project://database/Assets/Project/Fonts/IMMORTAL.ttf?fileID=12800000&guid=ebc806704cfe24843bf212501438b03f&type=3#IMMORTAL');
     -unity-font-definition: url('project://database/Assets/Project/Fonts/IMMORTAL%20SDF.asset?fileID=11400000&guid=914a7b74825ef73489c12002a001c155&type=2#IMMORTAL SDF');
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .container {
@@ -20,7 +20,7 @@
 }
 
 .search-container {
-    height: 60px;
+    height: 90px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -41,31 +41,30 @@
     border-top-color: rgb(0, 0, 0);
     border-bottom-color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0);
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-image: url('project://database/Assets/Project/Images/istockphoto-688550958-612x612.jpg?fileID=2800000&guid=354b36d9d2c2a7c45a0bc2054b453a06&type=3#istockphoto-688550958-612x612');
 }
 
 .logo {
-    background-image: url('project://database/Assets/Project/Images/wrench.png?fileID=2800000&guid=e230b994d5dbf8e4dafe197529d75583&type=3#wrench');
+    background-image: url('project://database/Assets/Project/Images/todo.png?fileID=2800000&guid=930a39c0dac9d934a9890eeac2f4bfcd&type=3#todo');
     background-color: rgba(0, 0, 0, 0);
-    border-left-color: rgb(255, 255, 255);
-    border-right-color: rgb(255, 255, 255);
-    border-top-color: rgb(255, 255, 255);
-    border-bottom-color: rgb(255, 255, 255);
-    visibility: visible;
-    overflow: visible;
-    width: 120px;
-    height: 120px;
+    width: 128px;
+    height: 128px;
 }
 
 .unity-input-field {
     width: 350px;
-    height: 40px;
+    height: 70%;
     background-color: rgb(0, 0, 0);
 }
 
 .search-container :hover {
     background-color: rgba(197, 197, 197, 0.83);
-    -unity-text-outline-color: rgba(255, 255, 255, 255);
+    -unity-text-outline-color: rgb(255, 255, 255);
+}
+
+.remove-button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 255);
 }

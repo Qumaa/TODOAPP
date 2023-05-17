@@ -28,8 +28,12 @@ public class TodoApp
     {
         var inputField = _appContainer.Q<TextField>(_INPUT_FIELD_NAME);
         var input = inputField.value;
+        
+        if (string.IsNullOrEmpty(input))
+            return;
 
         AddTask(input);
+        inputField.value = "";
     }
 
     private void AddTask(string prompt)
