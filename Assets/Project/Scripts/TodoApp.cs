@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using UnityEngine.UIElements;
 
 public class TodoApp
@@ -19,14 +17,16 @@ public class TodoApp
     
     public TodoApp(VisualElement appDocumentRootVisualElement)
     {
-        appDocumentRootVisualElement.Q<Button>(_ADD_BUTTON_NAME).clickable.clicked += HandleAddButtonClicked;
+        _appContainer = appDocumentRootVisualElement;
+        
+        _appContainer.Q<Button>(_ADD_BUTTON_NAME).clickable.clicked += HandleAddButtonClicked;
 
         _tasks = new List<TodoTask>();
     }
 
     private void HandleAddButtonClicked()
     {
-        var inputField = _appContainer.Q<TextField>();
+        var inputField = _appContainer.Q<TextField>(_INPUT_FIELD_NAME);
         var input = inputField.value;
 
         AddTask(input);
@@ -34,24 +34,17 @@ public class TodoApp
 
     private void AddTask(string prompt)
     {
-        var task = new TodoTask(prompt, _appContainer.Q(_TASKS_CONTAINER_NAME));
+        var task = new TodoTask(prompt);
         
         _tasks.Add(task);
+        task.OnRemoved += () => RemoveTask(task);
+        _appContainer.Q(_TASKS_CONTAINER_NAME).Add(task.Container);
     }
-}
 
-public class TodoTask
-{
-    private const string _TASK_DOCUMENT_PATH = "Task.uxml";
-    private const string _TASK_LABEL_NAME = "task-label";
-    private const string _TASK_REMOVE_BUTTON = "remove-button";
-
-    public event Action OnRemoved;
-
-    public TodoTask(string prompt, VisualElement container)
+    private void RemoveTask(TodoTask task)
     {
-        var document = Resources.Load(_TASK_DOCUMENT_PATH) as VisualTreeAsset;
-
-        document.CloneTree(container);
+        task.Container.style.display = DisplayStyle.None;
+        _tasks.Remove(task);
+        _appContainer.Q(_TASKS_CONTAINER_NAME).Remove(task.Container);
     }
 }

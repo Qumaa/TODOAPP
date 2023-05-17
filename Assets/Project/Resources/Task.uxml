@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/Project/Task.uss?fileID=7433441132597879392&amp;guid=671b8a9ad4a0b074386e6af3a835343a&amp;type=3#Task" />
-    <Style src="project://database/Assets/Project/App.uss?fileID=7433441132597879392&amp;guid=81e4d773b0f44284ca7b45145cbfb966&amp;type=3#App" />
+    <Style src="project://database/Assets/Project/Resources/App.uss?fileID=7433441132597879392&amp;guid=81e4d773b0f44284ca7b45145cbfb966&amp;type=3#App" />
+    <Style src="project://database/Assets/Project/Resources/Task.uss?fileID=7433441132597879392&amp;guid=1917aaedda24b0a44929f91c3d38a9f2&amp;type=3#Task" />
     <ui:VisualElement name="task-container" class="taskSettings">
         <ui:Label text="Label" display-tooltip-when-elided="true" name="task-label" class="textSettings labelStyle" />
         <ui:Button display-tooltip-when-elided="true" name="remove-button" text="-" class="remove-button" />
